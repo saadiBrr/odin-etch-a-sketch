@@ -6,6 +6,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: 0;
 }
 
 .button-container {
@@ -25,12 +28,12 @@ body {
     height: 40px;
 }
 
-.generate-button, .reset-button:hover {
+.generate-button:hover, .reset-button:hover {
     background-color: #4a4f57;
     transform: scale(1.05);
 }
 
-.generate-button, .reset-button:active {
+.generate-button:active, .reset-button:active {
     background-color: #5b5f68
 }
 
@@ -47,7 +50,33 @@ body {
     box-sizing: border-box;
 }
 
-.grid-container>.grid {
+.active {
+    background-color: rgb(31, 30, 30);
+}
+
+.footer {
+    background-color: #393e46;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 0;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    margin-left: 4px;
+    bottom: 1px;
+}
+
+/* .grid-container>.grid {
     width: 50px;
     height: 50px;
-}
+} */
