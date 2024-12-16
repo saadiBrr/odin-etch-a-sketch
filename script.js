@@ -1,5 +1,6 @@
 const container = document.getElementById('grid-container');
 const generateButton = document.getElementById('generate-button');
+const resetButton = document.getElementById('reset-button');
 
 function randomColor() {
     return '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
@@ -26,3 +27,7 @@ function createDivs(num) {
 generateButton.addEventListener('click', function() {
     createDivs(16)
 });
+
+resetButton.addEventListener('click', function() {
+    container.innerHTML = '';
+})

@@ -1,10 +1,37 @@
 body {
-    background-color: cadetblue;
+    background-color: #222831;
+    font-family: Calibri, sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.generate-button, .reset-button {
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #393e46;
+    font-size: 15px;
+    color: white;
+    transition: transform .2s ease;
+    width: 100px;
+    height: 40px;
+}
+
+.generate-button, .reset-button:hover {
+    background-color: #4a4f57;
+    transform: scale(1.05);
+}
+
+.generate-button, .reset-button:active {
+    background-color: #5b5f68
 }
 
 .grid-container {
